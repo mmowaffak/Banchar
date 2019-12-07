@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.hackathon.project1.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.hackathon.project1.SignUpFragment"
+        android:label="SignUpFragment"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_signUpFragment_to_signUp2Fragment"
+            app:destination="@id/signUp2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUp2Fragment"
+        android:name="com.hackathon.project1.SignUp2Fragment"
+        android:label="SignUp2Fragment"
+        tools:layout="@layout/fragment_sign_up_3">
+        <action
+            android:id="@+id/action_signUp2Fragment_to_signUp3Fragment"
+            app:destination="@id/signUp3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUp3Fragment"
+        android:name="com.hackathon.project1.SignUp3Fragment"
+        android:label="SignUp3Fragment"
+        tools:layout="@layout/fragment_sign_up_3"/>
+</navigation>
